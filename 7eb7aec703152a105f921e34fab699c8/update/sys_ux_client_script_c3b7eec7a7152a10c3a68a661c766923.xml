@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Search results">cfb7eec79d152a10f00b9151ea8b4032</macroponent>
+        <name>Set Loading</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    imports
+}) {
+    // Called on successful retrieval of search data
+    api.setState('loading', false);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:33</sys_created_on>
+        <sys_id>c3b7eec7a7152a10c3a68a661c766923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Loading</sys_name>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_ux_client_script_c3b7eec7a7152a10c3a68a661c766923</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:33</sys_updated_on>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

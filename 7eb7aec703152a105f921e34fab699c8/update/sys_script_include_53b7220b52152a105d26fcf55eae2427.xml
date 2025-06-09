@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1027072_test.DocApprovalUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>DocApprovalUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var DocApprovalUtils = Class.create();
+DocApprovalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	checkHex: function(code) {
+		var RegExp = /^#[0-9A-F]{6}$/i;
+		return RegExp.test(code);
+	},
+
+    type: 'DocApprovalUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:29</sys_created_on>
+        <sys_id>53b7220b52152a105d26fcf55eae2427</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DocApprovalUtils</sys_name>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_script_include_53b7220b52152a105d26fcf55eae2427</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

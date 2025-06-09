@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">5bb7eec7aa152a109c848ae1185726e9</canvas>
+        <component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component>
+        <component_props>{"variant":"header-secondary","label":"Recently Approved Documents","wontWrap":false,"hasNoMargin":false,"level":"2","noDebounce":""}</component_props>
+        <h>3</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>13b7eec788152a103ac75c3310ecd6e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>par_dashboard_widget_13b7eec788152a103ac75c3310ecd6e6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:33</sys_updated_on>
+        <visualization/>
+        <w>32</w>
+        <widget_props/>
+        <x>16</x>
+        <y>17</y>
+    </par_dashboard_widget>
+</record_update>

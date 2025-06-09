@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_highlighted_value_condition">
+    <sys_highlighted_value_condition action="INSERT_OR_UPDATE">
+        <color>green</color>
+        <conditions table="x_1027072_test_document_approver">state=approved^EQ<item display_value="Approved" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="approved"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <form_label_description/>
+        <hide_form_label>false</hide_form_label>
+        <highlighted_value display_value="state">17b7eec744152a10d11432a571be92ce</highlighted_value>
+        <icon/>
+        <order>0</order>
+        <show_icon>true</show_icon>
+        <status>positive</status>
+        <sys_class_name>sys_highlighted_value_condition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:14</sys_created_on>
+        <sys_id>93b7eec7cf152a10cf33e124035f57cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_highlighted_value_condition_93b7eec7cf152a10cf33e124035f57cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:14</sys_updated_on>
+        <value_override/>
+        <variant>primary</variant>
+    </sys_highlighted_value_condition>
+</record_update>

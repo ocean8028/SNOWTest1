@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_1027072_test_document_approval_notification</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+            /* Optional EmailOutbound */
+            email, /* Optional GlideRecord */ email_action,
+            /* Optional GlideRecord */
+            event) {
+        
+            var eventStr = event.parm2;
+            var eventObj = JSON.parse(eventStr);
+            var fontSize = 'font-size: 16px;';
+            var imgSize = 'height: 42px; width: 42px;';
+            var fontFamily = 'font-family: Lato;';
+            var color = 'color:  #ffffff;';
+            var textDecoration = 'text-decoration: none; border-radius: 4px;';
+            var fontColor = 'color: #2C323F;';
+        
+            if (eventObj['status'] == 'submitted')
+                email.setSubject('Awaiting Review ' + eventObj['doc_name']);
+            else
+                email.setSubject(eventObj['doc_name'] + ' ' + eventObj['status']);
+        
+            template.print('<div style = "text-align:center">');
+            if (eventObj['status'] == 'submitted' || eventObj['status'] == 'approved')
+                template.print('<div><img style = "'+ imgSize +'" src="x_1027072_test.doc-approval-green-check-mark.png" /></div>');
+            else if (eventObj['status'] == 'returned')
+                template.print('<div><img style = "'+ imgSize +'" src="x_1027072_test.doc-approval-yellow-exclamation-mark.png" /></div>');
+            else
+                template.print('<div><img style = "'+ imgSize +'" src="x_1027072_test.doc-approval-red-exclamation-mark.png" /></div>');
+        
+        
+            //Header
+            if (eventObj['status'] == 'submitted')
+                template.print('<p style="font-size: 32px;font-weight: bold;'+ fontColor + fontFamily +'">You have a new document to review</p>');
+            else
+                template.print('<p style="font-size: 32px;font-weight: bold;'+ fontColor + fontFamily +'">Your document has been ' + eventObj['status'] + '</p>');
+        
+        
+            template.print('<p style="padding: 2px;margin: 0;'+ fontColor + fontFamily + fontSize+'">');
+        
+            //Body Content
+            if (eventObj['status'] == 'submitted') {
+                template.print('<b>Document Name</b> <br/>');
+                template.print(eventObj['doc_name'] + '<br/>');
+                template.print('<b>Document Owner</b> <br/>');
+                template.print(eventObj['doc_owner']);
+            } else if (eventObj['status'] == 'approved') {
+                template.print(eventObj['approver'] + ' has approved your document, <br/>');
+                template.print(eventObj['doc_name']);
+            } else {
+                template.print('Reason for rejection: <br/>');
+                template.print('<p style="color:rgb(112, 112, 112)">' + eventObj['reason'] + '</p>');
+            }
+        
+            template.print('</p>');
+        
+        
+            template.print('<p><br/></p>');
+            template.print('</div>');
+        
+            var button_color = gs.getProperty("x_1027072_test.u_button_bgcolor");
+            var docAppUtils = new DocApprovalUtils;
+            var checkHex = docAppUtils.checkHex(button_color);
+            if(!button_color || !checkHex){
+                button_color = '#01778E';
+            }
+        
+        
+            var currentSys = '/x/1027072/x_1027072_test-doc-approval/portal/doc_view/' + eventObj["document_id"];
+            var currentSysId = 'x/1027072/x_1027072_test-doc-approval/workspace/record/x_1027072_test_document_approver/' + eventObj["approver_id"];
+            if (eventObj['status'] == 'submitted') {
+                template.print('<div style = "text-decoration: none !important; display: inline-block; line-height: 45px; text-align:center;  background: '+button_color+' 0% 0% no-repeat padding-box !important; height: 45px; width: 126px; border-radius: 4px; opacity: 1;"><a style="'  + textDecoration+ color + fontSize + fontFamily+'" href="' + currentSysId + '">View Submission</a></div>');
+            } else {
+                template.print('<div style = "text-decoration: none !important; display: inline-block; line-height: 45px; text-align:center;   background: '+button_color+' 0% 0% no-repeat padding-box !important; height: 45px; width: 126px; border-radius: 4px; opacity: 1;"><a style="'  + textDecoration+ color + fontSize + fontFamily+'" href="' + currentSys + '">View Submission</a></div>');
+            }
+        
+        
+        
+        
+        
+        
+        
+        })(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:37</sys_created_on>
+        <sys_id>8fb7eec7d6152a1071e8407674f1d17a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1027072_test_document_approval_notification</sys_name>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_script_email_8fb7eec7d6152a1071e8407674f1d17a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:37</sys_updated_on>
+    </sys_script_email>
+</record_update>

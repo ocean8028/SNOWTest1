@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>text_08_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:17</sys_created_on>
+        <sys_id>87b7eec7a6152a1006cc7b7689e5a95c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_08_element</sys_name>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_87b7eec7a6152a1006cc7b7689e5a95c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:17</sys_updated_on>
+        <view_config display_value="Document Approvals View Config">47b7eec713152a1007ae4574479d4666</view_config>
+        <view_template_slot display_value="text_08">8bb7eec7a3152a10f7a4aad3d50cb95b</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

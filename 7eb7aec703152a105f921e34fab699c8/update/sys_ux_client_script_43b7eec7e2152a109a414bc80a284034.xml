@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Record">07b7eec7e5152a102ad22e215fd24034</macroponent>
+        <name>Record Modal</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[function handler({
+        api,
+        event,
+        imports,
+        helpers
+    }) {
+    
+    const { name, payload: { route, fields, params, size = 'md' }} = event;
+    
+    if (name === 'RECORD#CLOSE_MODAL')
+        helpers.modal.close();
+    
+    else if (name === 'RECORD#OPEN_MODAL') {
+        if (!route)
+            return;
+        
+        api.setState('bare', true);
+        api.setState('displayOptions', { size: size });
+        api.setState('contents', {
+            route: route,
+            fields: fields,
+            params: params
+        });
+    }
+    
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:29</sys_created_on>
+        <sys_id>43b7eec7e2152a109a414bc80a284034</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Modal</sys_name>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_ux_client_script_43b7eec7e2152a109a414bc80a284034</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:29</sys_updated_on>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

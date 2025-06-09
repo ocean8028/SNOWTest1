@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_mapping">
+    <sys_declarative_action_payload_mapping action="INSERT_OR_UPDATE">
+        <action_payload_definition display_value="Create New Doc Category">9bb7eec78c152a10cc30410063256fdd</action_payload_definition>
+        <label>Create New Doc Category List</label>
+        <model display_value="List">c3547169534723003eddddeeff7b126c</model>
+        <payload_map>params@query={{query}}^parent_table={{parentTable}}^additional_data@query={{query}}^fields@table={{table}}^route=record^fields@sysId=-1^EQ</payload_map>
+        <required_translations/>
+        <sys_class_name>sys_declarative_action_payload_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:31</sys_created_on>
+        <sys_id>93b7eec761152a10ce55217b830d69dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New Doc Category List</sys_name>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_mapping_93b7eec761152a10ce55217b830d69dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:31</sys_updated_on>
+    </sys_declarative_action_payload_mapping>
+</record_update>

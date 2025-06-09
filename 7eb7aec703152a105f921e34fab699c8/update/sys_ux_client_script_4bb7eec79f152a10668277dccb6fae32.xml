@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Record default">4bb7eec76f152a10a27d19f874cbd635</macroponent>
+        <name>previewRecordRouteMapping</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({
+    api,
+    helpers,
+    event,
+    imports
+}) {
+      
+    const {
+        routeMapping,
+        buildDefaultRoutePayload
+    } = imports["global.recordRoutesMapping"]();
+
+    var route = 'record';
+    var targetRoute = 'current';
+    const defaultRoutePayload = buildDefaultRoutePayload(route, targetRoute, event);
+    
+    const routeMap = api.data.dynamic_routing_record.routeMap;
+    const payload = routeMapping(routeMap, defaultRoutePayload, event);
+
+    const {
+        emit
+    } = api;
+    if (event.payload.table == "sys_hub_flow") {
+        if(api.state.flowRedirection){
+                emit('NAV_ITEM_SELECTED', {
+                    external: {
+                    url: '/$flow-designer.do?sysparm_nostack=true#/flow-designer/'+event.payload.sys_id+"?sys_id="+event.payload.sys_id
+                }
+            });
+        }
+        api.setState('flowRedirection', !api.state.flowRedirection);
+        
+    } else {
+        emit('NAV_ITEM_SELECTED', payload);
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:41</sys_created_on>
+        <sys_id>4bb7eec79f152a10668277dccb6fae32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>previewRecordRouteMapping</sys_name>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_ux_client_script_4bb7eec79f152a10668277dccb6fae32</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:41</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_workspace_header_ux_header_config">
+    <sys_ux_m2m_workspace_header_ux_header_config action="INSERT_OR_UPDATE">
+        <header_config display_value="Document Approval Workspace">83b7eec704152a102e0db113a67f7018</header_config>
+        <sys_class_name>sys_ux_m2m_workspace_header_ux_header_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:18</sys_created_on>
+        <sys_id>8fb7eec79e152a10e48b9070754bbf15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_ux_m2m_workspace_header_ux_header_config_8fb7eec79e152a10e48b9070754bbf15</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:18</sys_updated_on>
+        <workspace_form_header display_value="x_1027072_test_document_approval_category">93b7eec74f152a10b6b05e309192abe2</workspace_form_header>
+    </sys_ux_m2m_workspace_header_ux_header_config>
+</record_update>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <bundles/>
+        <category>macroponent</category>
+        <component_dependencies/>
+        <composition>[
+            {
+                "definition": {
+                    "id": "f552e6a932780394b6f06c14071aa115",
+                    "type": "MACROPONENT"
+                },
+                "elementId": "dashboard_1",
+                "elementLabel": "Dashboard 1",
+                "eventMappings": [
+                    
+                ],
+                "isHidden": {
+                    "type": "JSON_LITERAL",
+                    "value": null
+                },
+                "preset": null,
+                "propertyValues": {
+                    "dashboardSysId": {
+                        "binding": {
+                            "address": [
+                                "sysId"
+                            ],
+                            "category": "props"
+                        },
+                        "type": "CONTEXT_BINDING"
+                    },
+                    "defaultDashboard": {
+                        "type": "JSON_LITERAL",
+                        "value": "57b7eec718152a10fed0c22101a6b3ea"
+                    },
+                    "defaultDrilldowns": {
+                        "type": "JSON_LITERAL",
+                        "value": true
+                    },
+                    "editMode": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "element": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "experienceId": {
+                        "binding": {
+                            "address": [
+                                "appId"
+                            ],
+                            "category": "app"
+                        },
+                        "type": "CONTEXT_BINDING"
+                    },
+                    "filterId": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "hideCreateNewButton": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "hideDashboardPicker": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "hideEditButton": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "hideHeader": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "hideShareButton": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "showPrintPreview": {
+                        "type": "JSON_LITERAL",
+                        "value": false
+                    },
+                    "tabSysId": {
+                        "type": "JSON_LITERAL",
+                        "value": ""
+                    },
+                    "userInfo": {
+                        "binding": {
+                            "address": [
+                                "user"
+                            ],
+                            "category": "session"
+                        },
+                        "type": "CONTEXT_BINDING"
+                    }
+                },
+                "slot": null,
+                "styles": null
+            }
+        ]</composition>
+        <da_relay_models/>
+        <data>[
+    {
+        "cachePolicy": null,
+        "definition": {
+            "id": "5d46138853231010c495ddeeff7b121d",
+            "type": "TRANSFORM"
+        },
+        "dependencies": {},
+        "elementId": "now_datetime_2",
+        "elementLabel": "Now DateTime 2",
+        "eventMappings": [
+            
+        ],
+        "inputValues": {
+            "days": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "months": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "seconds": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "weeks": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "years": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "cachePolicy": null,
+        "definition": {
+            "id": "83b7eec708152a10845e879bc16c4a75",
+            "type": "TRANSFORM"
+        },
+        "dependencies": {},
+        "elementId": "drilldown_list_title_internationalization_support_2",
+        "elementLabel": "Drill-down list title internationalization support 2",
+        "eventMappings": [
+            
+        ],
+        "inputValues": {},
+        "readEvaluationMode": "EAGER"
+    }
+]</data>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>c7b7eec70f152a1026a85d49311e891c</dispatched_events>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors/>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "children": null,
+        "isInline": null,
+        "items": [
+            {
+                "element_id": "dashboard_1",
+                "styles": {}
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "grid-gap": "var(--now-static-space--lg)",
+            "grid-template-areas": "\"main\"",
+            "grid-template-columns": "1fr",
+            "grid-template-rows": "minmax(400px,auto)",
+            "height": "100%"
+        },
+        "templateId": "28bde4cd53431010e6bcddeeff7b12cc",
+        "type": "grid"
+    },
+    "version": "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Home Admin</name>
+        <output_prop_mapping/>
+        <props>[
+    
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[
+    
+]</state_properties>
+        <style_config/>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:29</sys_created_on>
+        <sys_id>03b7eec75e152a105c952bb2f168e31d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home Admin</sys_name>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_ux_macroponent_03b7eec75e152a105c952bb2f168e31d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:29</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=03b7eec75e152a105c952bb2f168e31d"/>
+</record_update>

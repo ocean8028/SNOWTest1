@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_segment">
+    <sys_sg_item_stream_m2m_segment action="INSERT_OR_UPDATE">
+        <item_stream display_value="Approvals this month Item Stream">0bb7eec784152a10c5a8c89f8a06dc63</item_stream>
+        <segment display_value="Item Stream Segment">8fb7eec775152a1086c59db70fa63160</segment>
+        <sys_class_name>sys_sg_item_stream_m2m_segment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:10</sys_created_on>
+        <sys_id>cbb7eec7cd152a10e6b32821ae76cc60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_segment_cbb7eec7cd152a10e6b32821ae76cc60</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:10</sys_updated_on>
+    </sys_sg_item_stream_m2m_segment>
+</record_update>

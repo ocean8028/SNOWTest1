@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:15</sys_created_on>
+        <sys_id>03b7eec7e0152a1079c34c6e437eab6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_security_acl display_value="x.1027072.x_1027072_test-portal.*">87b7eec75e152a10652820315aa96874</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_03b7eec7e0152a1079c34c6e437eab6e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:15</sys_updated_on>
+        <sys_user_role display_value="x_1027072_test.submitter" name="x_1027072_test.submitter">1fb7220bc9152a105c4e8db94420e925</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

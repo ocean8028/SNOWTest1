@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_chart">
+    <sys_sg_chart action="INSERT_OR_UPDATE">
+        <data_visualization/>
+        <jump_to_screen display_value="Navigate to document approvals this year">cfb7eec7b5152a104917bf87dfb69368</jump_to_screen>
+        <name>Approvals This Year</name>
+        <report display_value="Approvals This Year">8bb7eec7bb152a10ef1549fd4be1777b</report>
+        <sys_class_name>sys_sg_chart</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 20:03:16</sys_created_on>
+        <sys_id>4fb7eec746152a107d312608a75f0167</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approvals This Year</sys_name>
+        <sys_package display_value="Test" source="x_1027072_test">7eb7aec703152a105f921e34fab699c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test">7eb7aec703152a105f921e34fab699c8</sys_scope>
+        <sys_update_name>sys_sg_chart_4fb7eec746152a107d312608a75f0167</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:03:16</sys_updated_on>
+        <title>Approvals This Year</title>
+        <type>report</type>
+        <widget/>
+    </sys_sg_chart>
+</record_update>
